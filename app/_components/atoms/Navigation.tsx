@@ -5,7 +5,6 @@ import { usePathname } from 'next/navigation';
 
 const Navigation = () => {
   const currentPath = usePathname()
-  console.log(currentPath)
 
   const links = [
     {label: 'Home', href:'/'},
@@ -19,7 +18,7 @@ const Navigation = () => {
   ))
   
   return (
-    <div className="w-full h-[90px] flex flex-row space-x-[60px] items-center justify-center">
+    <div className="w-full h-[90px] flex flex-row space-x-[20px] md:space-x-[60px] items-center justify-center">
       {renderedLinks}
     </div>
   )
