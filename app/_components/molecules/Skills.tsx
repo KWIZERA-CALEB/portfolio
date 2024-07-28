@@ -113,7 +113,7 @@ const Skills = () => {
   ))
 
   return (
-    <div className='pt-[60px] pb-[60px] pr-[70px] pl-[70px]'>
+    <div className='pt-[60px] pb-[60px] pr-[12px] pl-[12px] md:pr-[70px] md:pl-[70px]'>
       <div className="mb-[40px]">
         <h3 className="font-bold custom text-[25px] text-slate-800 text-center">Frontend</h3>
         <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
