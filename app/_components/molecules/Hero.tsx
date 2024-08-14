@@ -15,7 +15,7 @@ const Hero = () => {
         <h3 className="custom font-bold text-slate-300 select-none text-center text-[30px]">Am</h3>
         <h3 className="custom font-bold text-slate-300 select-none text-center text-[30px]">Caleb Kwizera</h3>
         <h3 className="custom font-bold select-none text-center text-[32px] bg-gradient bg-clip-text text-transparent">
-            <Typewriter words={['A Backend Developer', 'UI Designer', 'A 3D Artist']} loop={Infinity} cursor cursorStyle='_' typeSpeed={70} deleteSpeed={50} delaySpeed={1000} />
+            <Typewriter words={['A Backend Developer', 'ML Engineer', 'A 3D Artist']} loop={Infinity} cursor cursorStyle='_' typeSpeed={70} deleteSpeed={50} delaySpeed={1000} />
         </h3>
       </div>
       <div>
