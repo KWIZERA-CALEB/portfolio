@@ -31,7 +31,7 @@ const Projects = () => {
     },
     {
       image: "/images/placeholder.png",
-      project_name:"Mwalimu.ai",
+      project_name:"Mwalimu AI",
       tech_stack: "Reactjs & Django & Mysql",
       link: ""
     },
@@ -62,15 +62,15 @@ const Projects = () => {
   ]
 
   const renderedProjects = projects.map((project, index)=> (
-      <div key={index} className="p-[30px] border-[2px] border-solid border-slate-800 cursor-pointer hover:border-sky-500 rounded-[6px] bg-black">
-          <div className="h-[250px] mb-[20px]">
+      <div key={index} className="p-[10px] border-[2px] border-solid border-slate-800 transition ease-in hover:bg-slate-800 cursor-pointer hover:border-sky-500 rounded-[12px] bg-[#000]">
+          <div className="mb-[20px]">
             <Link href={project.link}>
-              <img src={project.image} className="w-full h-full object-cover object-center rounded-[6px]" alt="Project Image" />
+              <img src={project.image} className="w-[170px] h-full object-cover object-center rounded-[12px]" alt={project.project_name} />
             </Link>
           </div>
           <div>
-              <h3 className="text-gray-300 pr-[15px] pl-[15px] select-none font-md text-[18px] text-start md:text-start">{project.project_name}</h3>
-              <p className="pr-[15px] pl-[15px] text-sky-500">{project.tech_stack}</p>
+              <h3 className="text-gray-300 pr-[15px] pl-[15px] select-none font-md text-[16px] text-start md:text-start">{project.project_name}</h3>
+              <p className="pr-[15px] pl-[15px] text-[14px] text-sky-500">{project.tech_stack}</p>
           </div>
       </div>
   ))
@@ -79,7 +79,7 @@ const Projects = () => {
   return (
     <div className='pt-[40px] pb-[60px] pr-[12px] pl-[12px] md:pr-[70px] md:pl-[70px]'>
       <h3 className="font-bold custom text-[32px] text-slate-800 text-center">My Projects</h3>
-      <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="grid gap-[4px] grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {renderedProjects}
       </div>
     </div>
