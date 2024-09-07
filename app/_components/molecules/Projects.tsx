@@ -65,7 +65,7 @@ const Projects = () => {
       <div key={index} className="p-[10px] border-[2px] border-solid border-slate-800 transition ease-in hover:bg-slate-800 cursor-pointer hover:border-sky-500 rounded-[12px] bg-[#000]">
           <div className="mb-[20px]">
             <Link href={project.link}>
-              <img src={project.image} className="w-[170px] h-full object-cover object-center rounded-[12px]" alt={project.project_name} />
+              <img src={project.image} className="w-full h-[200px] object-cover object-center rounded-[12px]" alt={project.project_name} />
             </Link>
           </div>
           <div>
@@ -79,7 +79,7 @@ const Projects = () => {
   return (
     <div className='pt-[40px] pb-[60px] pr-[12px] pl-[12px] md:pr-[70px] md:pl-[70px]'>
       <h3 className="font-bold custom text-[32px] text-slate-800 text-center">My Projects</h3>
-      <div className="grid gap-[4px] grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="grid gap-[6px] grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {renderedProjects}
       </div>
     </div>
