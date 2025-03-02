@@ -1,19 +1,25 @@
-import React from 'react'
-import Navigation from './_components/atoms/Navigation'
-import Hero from './_components/molecules/Hero'
-import Footer from './_components/atoms/Footer'
-import AnimatedCursor from "react-animated-cursor"
+"use client";
 
+import { navItems } from "@/data";
 
-const HomePage = () => {
+import Hero from "@/components/Hero";
+import Footer from "@/components/Footer";
+import TechStack from "@/components/TechStack";
+import RecentProjects from "@/components/RecentProjects";
+import { FloatingNav } from "@/components/ui/FloatingNavbar";
+
+const Home = () => {
   return (
-    <div className="w-full h-[100vh]">
-      <Navigation />
-      <Hero />
-      <Footer />
-      <AnimatedCursor />
-    </div>
-  )
-}
+    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+      <div className="max-w-7xl w-full">
+        <FloatingNav navItems={navItems} />
+        <Hero />
+        <TechStack />
+        <RecentProjects />
+        <Footer />
+      </div>
+    </main>
+  );
+};
 
-export default HomePage
+export default Home;
